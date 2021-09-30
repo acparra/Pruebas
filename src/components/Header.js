@@ -6,7 +6,7 @@ function Header() {
             <a href="" id="header-brand"> Mercadolibre changuero</a>
             <div id="header-right">
                 <a href=""> Inicio </a>
-                <i class="fas fa-user-circle" id="header-user-img"></i>
+                <i className="fas fa-user-circle" id="header-user-img"></i>
                 <div id="header-right-content">
                     <a href=""> Usuario </a>
                     <a href=""> Cerrar sesion </a>

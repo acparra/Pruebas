@@ -6,7 +6,7 @@ function Usuarios() {
             <h2 id="section_title"> Gestion de usuarios </h2>
             <div id="section_filter"> 
                 <input type="text" placeholder="Nombre del usuario.." id="name_filter"></input>
-                <button id="button_filter" class="button"> Buscar </button>
+                <button id="button_filter" className="button"> Buscar </button>
             </div>
             {Tabla_Usuarios()}
         </section>
@@ -15,7 +15,7 @@ function Usuarios() {
 
 const Rol_Usuarios = () =>{
     return(
-        <select class="lists"> 
+        <select className="lists"> 
             <option value="Ninguno"> Ninguno </option>
             <option value="Administrador"> Administrador </option>
             <option value="Vendedor"> Vendedor </option>
@@ -25,7 +25,7 @@ const Rol_Usuarios = () =>{
 
 const Estado_Usuarios = () =>{
     return(
-        <select class="lists">> 
+        <select className="lists">> 
             <option value="Pendiente"> Pendiente </option>
             <option value="Autorizado"> Autorizado </option>
             <option value="No_Autorizado"> No autorizado </option>
@@ -36,30 +36,34 @@ const Estado_Usuarios = () =>{
 const Tabla_Usuarios = () =>{
     return(
         <table id="search_table">
-            <tr>
-                <th> Nombre del usuario </th>
-                <th> Rol </th>
-                <th> Estado </th>
-                <th> Accion </th>
-            </tr>
-            <tr>
-                <td> Andrés Camilo Parra Delgadillo </td>
-                <td> {Rol_Usuarios()} </td>
-                <td> {Estado_Usuarios()} </td>
-                <td> <button class="button"> Actualizar </button> </td>
-            </tr>
-            <tr>
-                <td> Andrés Camilo Parra Delgadillo </td>
-                <td> {Rol_Usuarios()} </td>
-                <td> {Estado_Usuarios()} </td>
-                <td> <button class="button"> Actualizar </button> </td>
-            </tr>
-            <tr>
-                <td> Andrés Camilo Parra Delgadillo </td>
-                <td> {Rol_Usuarios()} </td>
-                <td> {Estado_Usuarios()} </td>
-                <td> <button class="button"> Actualizar </button> </td>
-            </tr>
+            <thead>
+                <tr>
+                    <th> Nombre del usuario </th>
+                    <th> Rol </th>
+                    <th> Estado </th>
+                    <th> Accion </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> Andrés Camilo Parra Delgadillo </td>
+                    <td> {Rol_Usuarios()} </td>
+                    <td> {Estado_Usuarios()} </td>
+                    <td> <button className="button"> Actualizar </button> </td>
+                </tr>
+                <tr>
+                    <td> Andrés Camilo Parra Delgadillo </td>
+                    <td> {Rol_Usuarios()} </td>
+                    <td> {Estado_Usuarios()} </td>
+                    <td> <button className="button"> Actualizar </button> </td>
+                </tr>
+                <tr>
+                    <td> Andrés Camilo Parra Delgadillo </td>
+                    <td> {Rol_Usuarios()} </td>
+                    <td> {Estado_Usuarios()} </td>
+                    <td> <button className="button"> Actualizar </button> </td>
+                </tr>
+            </tbody>
         </table>
     );
 }

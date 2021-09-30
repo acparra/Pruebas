@@ -28,4 +28,9 @@ nav #nav-items .nav-item {
     padding: 15px 0px;
     color: #fff;
     font-size: 14px;
+    transition: transform .2s linear;
+}
+
+.nav-item:hover{
+  transform: translateX(10px);
 }

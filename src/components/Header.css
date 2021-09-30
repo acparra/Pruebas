@@ -13,6 +13,11 @@ header a {
     color: #fff;
 }
 
+#header-brand{
+    font-size: 18px;
+    font-weight: bold;
+}
+
 #header-right{
     display: flex;
     flex-direction: row;
@@ -34,4 +39,5 @@ header a {
 
 #header-right-content a:first-child{
     font-size: 14px;
+    font-weight: bold;
 }
